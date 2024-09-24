@@ -1,0 +1,131 @@
+[data-theme="light"] {
+    --background: #883300;
+    --background_transparente:#88330086;
+    --text: #fff;
+    --enfasis:#883300;
+    --sombra:#fff;
+    --sombra_caja_header: none;
+}
+[data-theme="dark"] {
+    --text: #fff;
+    --background:#000000;
+    --background_transparente:#00000c86;
+    --enfasis: #d45500;
+    --sombra:#883300;
+    --sombra_caja_header: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+.content_pop_up{
+    position: fixed;
+    width: 100%;
+    z-index: 150;
+    background-color: #000000b9;
+    top:0;
+    bottom: 0;
+    transition: all 0.3s linear;
+}
+
+.content_pop_up{
+    padding: 10%;
+}
+.popup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    padding: 2%;
+    gap: 2%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s linear;
+    animation: fadeDown 0.5s ease-out; /* Añade esta línea */
+}
+.img_popup{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_popup > img{
+    width: 100%;
+    border-radius: 10px;
+}
+.content_popup{
+    height: 100%;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+.exit_pop_up a{
+    position: absolute;
+    font-size: 2rem;
+    top: 5%;
+    right: 10%;
+    padding: 1%;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.colors_content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2%;
+}
+.colors_content div:first-child{
+    background-color: #883300;   
+}
+.colors_content div:first-child:hover{
+    background-color: #d45500;
+}
+.colors_content div:last-child{
+    background-color: #000;
+}
+.colors_content div:last-child:hover{
+    background-color: #252525;
+}
+
+.colors_content div{
+    color: rgba(255, 255, 255, 1);
+    padding: 45% 5%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+@media screen and (max-width:500px) {
+    .popup{
+        flex-direction: column;
+        margin-top: 50%;
+    }
+    .exit_pop_up{
+        margin-top: 5%;
+    }
+    .exit_pop_up a{
+        padding: 3%;
+    }
+    .img_popup{
+        width: 100%;
+    }
+    .content_popup{
+        width: 100%;
+    }
+}
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    transition: all 0.3s linear;
+}
+.content_header{
+    width: 80%;
+    margin: auto;
+    padding: 1% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.abajo_scroll{
+    background: var(--background_transparente);
+    transition: all 0.3s linear;
+    backdrop-filter: blur(5px);
+}
+.abajo_scroll .content_header nav ul li hr{
+    background-color: white;
+}
+.content_header a{
+    width: 15%;
+}
+.content_header a img{
+    width: 100%;
+}
+.content_header nav{
+    width: 30%;
+    
+}
+.content_header nav ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2%;
+    list-style: none;
+}
+.content_header nav ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content_header nav ul li a{
+    width: 100%;
+    color: var(--text);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-wrap: nowrap;
+    text-indent: 1.5;
+}
+.content_header nav ul li hr{
+    margin-top: 2%;
+    width: 0%;
+    height: 2px;
+    transition: all 0.4s linear;
+    background-color: var(--enfasis);
+    opacity: 0;
+    border: none;
+}
+.content_header nav ul li:hover  hr{
+    width: 100%;
+    opacity: 1;
+    border-radius: 100%;
+}
+body{
+    font-family: "Mulish", sans-serif;
+    transition: all 0.3s linear;
+}
+.front_page{
+    width: 100%;
+    background-image: url(../../assets/gui/IMG_1761.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+}
+.black_back{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1.2px);
+}
+.content_front_page{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.content_front_page div{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content_front_page div h1{
+    color: var(--text);
+    text-align: left ;
+    text-shadow: black;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+.content_front_page div p{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.content_front_page div img{
+    width: 95%;
+    margin: auto;
+    animation: fade-img 8s infinite linear;
+}
+.icono_flecha{
+    position: absolute;
+    width: 100%;
+    bottom: 2%;
+    display: flex;
+}
+.icono_flecha i{
+    font-size: 4rem;
+    margin: auto;
+    color: #fff;
+    animation: fade-img 8s infinite linear;
+}
+@keyframes fade-img {
+    0%{
+        filter: none;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        filter: drop-shadow(5px 5px 40px var(--sombra));
+    }
+    90%{
+        filter: none;
+        opacity: 0;
+    }
+    100%{
+        filter: none;
+        opacity: 0;
+    }
+}
+main{
+    width: 100%;
+    background-image: url(../../assets/img/Default_A_vibrant_intricate_mosaic_background_image_featuring_0.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    background-attachment: fixed;
+}
+.titulo_seccion{
+    width: 100%;
+    background: var(--background_transparente);
+    color: white;
+    padding: 5%;
+    text-align: center;
+}
+.titulo_seccion h2{
+    text-transform: uppercase;
+}
+.titulo_seccion h4{
+    font-weight: 300;
+    margin: 2% 0%;
+    color: rgba(255,255,255,0.5);
+}
+.content_main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:600px) {
+    .content_header a img{
+        width: 300%;
+    }
+    .content_header{
+        justify-content: center;
+        margin: 0;
+    }
+    .content_front_page{
+        margin: 15% auto;
+    }
+    .front_page{
+        background-size: cover;
+        background-attachment:initial;
+    }
+    .icono_flecha{
+        display: none;
+    }
+    .content_header nav{
+        display: none;
+    }
+    .content_header h1{
+        width: 100%;
+        text-align: center;
+    }
+    .content_front_page div:first-child{
+        text-align: center;
+    }
+    .content_front_page div h1{
+        text-align: center;
+    }
+    .titulo_seccion:last-child{
+        margin-top: 4%;
+    }
+}

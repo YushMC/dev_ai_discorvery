@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/general.css">
+    <link rel="stylesheet" href="src/css/pop_up.css">
+    <link rel="stylesheet" href="src/css/float_button.css">
+    <link rel="stylesheet" href="src/css/cards.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <script src="https://kit.fontawesome.com/f54d272d6c.js" crossorigin="anonymous"></script>
+    <title>AI Discovery</title>
+</head>
+<body>
+    <header>
+        <div class="content_header">
+            <a href="index.html"><img src="assets/gui/Logo-blanco-header.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="#">Lugares</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="#">+Info</a>
+                        <hr>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container-buttons-float">
+        <input type="checkbox" name="" id="btn-mas" style="cursor: pointer;">
+        <div class="funciones">
+            <a onclick="mostrarElemento('color')"><i class="fa-solid fa-brush"></i></a>
+            <a title="Página al azar"><i class="fa-solid fa-comment"></i></a>
+            <a title="Visitar Sitio Web Antiguo" target="_blank"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+        <div class="btn-mas" style="cursor: pointer;">
+            <label for="btn-mas" title="Mostrar/Ocultar"><i class="fa-solid fa-plus" style="cursor: pointer; margin-top:25%;"></i></label>
+        </div>
+    </div>
+
+    <div class="content_pop_up" id="color" style="display: none;">
+        <div class="exit_pop_up">
+            <a  onclick="mostrarElemento('color')"><i class="fa-solid fa-x"></i></a>
+        </div>
+        <div class="popup">
+            <div class="img_popup">
+                <img src="https://i0.wp.com/www.espiritucurioso.com.mx/wp-content/uploads/2021/10/Teotihuacan.jpg" alt="" srcset="">
+            </div>
+            <div class="content_popup">
+                <h1>Selecciona un color de enfasis</h1>
+                <div class="colors_content">
+                    <div class="color_option" id="color_naranja">AI Discovery</div>
+                    <div class="color_option" id="color_oscuro">Oscuro</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="front_page">
+        <div class="black_back">
+            <div class="content_front_page">
+                <div class="">
+                    <h1 style="color:#da5503;">
+                        Excursión al pasado...
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, reiciendis.
+                    </p>
+                </div>
+                <div class="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2166/2166433.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="icono_flecha">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </div>
+    <main>
+        <div class="black_back">
+            <div class="titulo_seccion">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, facilis!</h2>
+            </div>
+            <div class="content_main">
+                <div class="content_cards">
+                    <div class="card" style="background-image: url('assets/piramides/plazuelas_1.jpeg');">
+                        <div class="description_card">
+                            <div class="container_img_card">
+                                <img src="assets/piramides/plazuelas_1.jpeg" alt="">
+                            </div>
+                            <div class="container_content_card">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nihil corporis ullam, modi quisquam beatae excepturi quis ducimus molestias itaque.</p>
+                            </div>
+                        </div>
+                        <div class="actions_card">
+                            <a href="#">Maps</a><a href="#">VR</a><a href="#">AR</a>
+                        </div>
+                    </div>
+                    <div class="card" style="background-image: url('assets/piramides/plazuelas_2.jpeg');">
+                        <div class="description_card">
+                            <div class="container_img_card">
+                                <img src="assets/piramides/plazuelas_2.jpeg" alt="">
+                            </div>
+                            <div class="container_content_card">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nihil corporis ullam, modi quisquam beatae excepturi quis ducimus molestias itaque.</p>
+                            </div>
+                        </div>
+                        <div class="actions_card">
+                            <a href="#">Maps</a><a href="#">VR</a><a href="#">AR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="titulo_seccion">
+                <h2>Nuestras herramientas funcionan con tecnologías modernas</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis soluta iure quam nihil nam suscipit.</h4>
+            </div>
+            <div class="content_main">
+                <div class="contenedor_cartas_horizontales">
+                    <div class="card">
+                        <div class="container_img_card">
+                            <img src="assets/gui/2.png" alt="">
+                        </div>
+                        <div class="container_content_card">
+                            <p>Utilizando la Realidad Aumentada como medio de información</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container_content_card">
+                            <p>Agregando tecnicas y complementos de Realidad Virtual</p>
+                        </div>
+                        <div class="container_img_card">
+                            <img src="assets/gui/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="black_back">
+            <div class="container_footer">
+                <div class="content_footer">
+                    <div>
+                        <img src="assets/gui/Logo-blanco-header.png" alt="">
+                        
+                    </div>
+                    <div>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus ullam omnis deserunt ut a blanditiis, sequi aperiam nemo! Accusantium.</h5>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-facebook"></i><label>Facebook</label></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i><label>Instagram</label></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i><label>Correo</label></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <h2>@AI Discovery 2024</h2>
+            </div>
+        </footer>
+    </main>
+    
+</body>
+<script>
+    window.addEventListener("scroll",function(){
+      const header = document.querySelector("header");
+      header.classList.toggle("abajo_scroll",window.scrollY>0);
+      /*
+      const buscador = document.querySelector('.search');
+      buscador.classList.toggle("abajo_scroll",window.scrollY>0 ); */
+    });
+</script>
+<script>
+    // Acceder al elemento por su ID y mostrarlo
+    function mostrarElemento(idElemento){
+      var elemento = document.getElementById(idElemento);
+      if (elemento) {
+        if(elemento.style.display == "none"){
+            elemento.style.display="block"
+        }else{
+            elemento.style.display="none"
+        }
+        
+      }
+    }
+    
+  </script>
+<script src="src/js/pop_up.js"></script>
+</html> 
